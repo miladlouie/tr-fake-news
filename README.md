@@ -11,7 +11,7 @@ A Turkish fake news detector combining:
 
 ## Current Status
 
-✅ **Implemented:**
+### Implemented:
 
 - Text preprocessing with optional Turkish morphology (Zemberek/Zeyrek)
 - Feature engineering pipeline (TF-IDF + custom + fuzzy)
@@ -19,7 +19,7 @@ A Turkish fake news detector combining:
 - Single text prediction with confidence scores
 - Test prediction suite
 
-⚠️ **Limitations:**
+### Limitations:
 
 - Model retrains on every run (no persistence)
 - Small handcrafted feature set
@@ -42,8 +42,6 @@ python -m tools.test_predict
 ```
 
 ## Future Improvements
-
-🎯 **Planned:**
 
 - Save trained models (TF-IDF, scaler, Tsetlin) to disk for faster inference
 - Expand dataset and improve fuzzy rule tuning
