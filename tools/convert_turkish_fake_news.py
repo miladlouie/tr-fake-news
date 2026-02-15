@@ -11,13 +11,11 @@ output.parent.mkdir(exist_ok=True)
 
 rows = []
 
-# Fake news (Zaytung)
 for file in fake_dir.glob("*.txt"):
     text = file.read_text(encoding="utf-8").strip()
     if text:
         rows.append([text, 0])  # FAKE = 0
 
-# Real news (Hurriyet)
 for file in real_dir.glob("*.txt"):
     text = file.read_text(encoding="utf-8").strip()
     if text:

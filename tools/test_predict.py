@@ -9,14 +9,14 @@ tests = [
     # Likely FAKE
     "ŞOK! Gizli deneyde insanlar görünmez oldu!!!",
     "Uzaylılar Ankara üzerinde görüldü iddiası!!!",
-    "Mucize bitki tüm hastalıkları 3 günde yok ediyor!",
-    "Gizli belgeye göre dünya sona yaklaşıyor!",
 ]
 
 print("\nRunning prediction tests...\n")
 
 for i, text in enumerate(tests, 1):
-    print(f"\n--- Test {i} ---")
+    print("\n" * 4 + "=" * 20 + f" TEST {i} " + "=" * 20)
+    print()
     print(f"Text: {text}")
     result = predict_text(text)
     print(result)
+    print("=" * 50)

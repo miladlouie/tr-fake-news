@@ -1,6 +1,6 @@
 # TF-IDF
-# Custom linguistic features
-# Feature merging
+# custom linguistic features
+# feature merging
 
 import re
 import numpy as np

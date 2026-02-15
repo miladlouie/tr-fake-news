@@ -17,7 +17,7 @@ def load_data(dataset_path=None):
 
     path = Path(dataset_path)
 
-    # ---------- CASE 1: CSV ----------
+    # case1: csv
     if path.is_file():
         print(f"Loading CSV dataset: {path}")
         df = pd.read_csv(path)
@@ -29,7 +29,7 @@ def load_data(dataset_path=None):
 
         return df.dropna(subset=["text", "label"])
 
-    # ---------- CASE 2: Folder dataset ----------
+    # case2: dir dataset
     if path.is_dir():
         fake_dir = path / "Fake"
         real_dir = path / "Real"
@@ -41,7 +41,6 @@ def load_data(dataset_path=None):
 
         rows = []
 
-        # Load FAKE
         for file in fake_dir.glob("*.txt"):
             try:
                 text = file.read_text(encoding="utf-8", errors="ignore").strip()
@@ -50,7 +49,6 @@ def load_data(dataset_path=None):
             except Exception:
                 pass
 
-        # Load REAL
         for file in real_dir.glob("*.txt"):
             try:
                 text = file.read_text(encoding="utf-8", errors="ignore").strip()

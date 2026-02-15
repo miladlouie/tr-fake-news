@@ -1,3 +1,3 @@
-# Accuracy / F1
-# Confusion matrix
-# Optional plots
+# accuracy / F1
+# confusion matrix
+# optional plots
