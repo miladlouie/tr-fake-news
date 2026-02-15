@@ -6,10 +6,10 @@ from .config import DATA_PATH
 def load_data(dataset_path=None):
     """
     Supports:
-    1) CSV dataset → text,label
+    1) CSV dataset >> text,label
     2) Folder dataset:
-         base/Fake/*.txt → label 0
-         base/Real/*.txt → label 1
+         base/Fake/*.txt >> label 0
+         base/Real/*.txt >> label 1
     """
 
     if dataset_path is None:

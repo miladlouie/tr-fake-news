@@ -1,4 +1,4 @@
-# load → preprocess → feature → train → save model
+# load >> preprocess >> feature >> train >> save model
 
 import re
 import pickle

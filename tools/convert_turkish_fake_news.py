@@ -31,4 +31,4 @@ with open(output, "w", newline="", encoding="utf-8") as f:
     writer.writerow(["text", "label"])
     writer.writerows(rows)
 
-print(f"Saved → {output}")
+print(f"Saved >> {output}")

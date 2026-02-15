@@ -69,7 +69,7 @@ def _extract_fuzzy_inputs(text: str):
     # --- noise ---
     noise = 1.0 if re.search(r"(.)\1\1", text) else 0.0
 
-    # IMPORTANT: evidence means REAL → convert to "fake evidence lack"
+    # IMPORTANT: evidence means REAL >> convert to "fake evidence lack"
     evidence_for_fake = 1.0 - evidence
 
     return {

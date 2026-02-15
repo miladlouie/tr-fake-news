@@ -9,7 +9,7 @@ The project is **not using any saved models yet**.
 
 Right now, the system runs with a **simple baseline pipeline**:
 
-- Text → TF-IDF (built in memory each run)
+- Text >> TF-IDF (built in memory each run)
 - Handcrafted linguistic features
 - Fuzzy rule-based fake score
 - Tsetlin Machine trained during runtime (not loaded from disk)

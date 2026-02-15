@@ -78,4 +78,4 @@ with open(OUTPUT, "w", newline="", encoding="utf-8") as f:
         text = add_noise(text)
         writer.writerow([text, label])
 
-print(f"Dataset generated → {OUTPUT} ({N} rows)")
+print(f"Dataset generated >> {OUTPUT} ({N} rows)")
